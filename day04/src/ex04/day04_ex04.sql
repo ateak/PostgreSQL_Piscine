@@ -13,4 +13,4 @@ FROM table_1
 UNION SELECT * FROM table_2
 ORDER BY person_id) AS v;
 
---select * from inv_symmetric_union
+--select * from v_symmetric_union
