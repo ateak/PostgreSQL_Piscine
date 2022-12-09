@@ -1,3 +1,5 @@
-COMMENT ON TABLE person_discounts IS
-'This table contains the information about personal discounts and pizzeria restaurants. 
-There are 4 columns in it: name (customer''s name), pizza_name (customer''s order), price (standart price), discount (amount of a discount in percent)';
+COMMENT ON COLUMN person_discounts.id is 'primary key identifier';
+COMMENT ON COLUMN person_discounts.person_id is 'person identifier';
+COMMENT ON COLUMN person_discounts.pizzeria_id is 'pizzeria identifier';
+COMMENT ON COLUMN person_discounts.discount is 'discount for pair person and pizzeria';
+COMMENT ON TABLE person_discounts is 'Discounts for persons';
